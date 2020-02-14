@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Acumin;
+    font-weight: bold;
+    src: url("Acumin-BdPro.otf") format("opentype");
+}
+
+#app-container {
+    width: 100%;
+    max-width: none;
+}
+body {
+    color: #333333;
+    font-size: 15px;
+    margin: 10px;
+}
+
+hr {
+    margin: 0.3rem 0rem;
+}
+
+.banner {
+    height: 10 rem;
+    padding: 0rem 2rem 0rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner Img {
+    position: relative;
+    height: 15rem;
+    width: auto;
+    align:center;
+}
+H2 {
+    color: black;
+    padding-left:45rem;
+}
+H6, H3 {
+    font-family: Acumin, "Helvetica Neue", sans-serif;
+    padding-left:2rem;
+}
+#intro {
+    margin: 20px 0px;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+#Center-left{
+    font-weight: bold;
+    text-align: justify;
+    width:30%;
+    display:inline-block;
+ }
+#Center-right{
+    margin:8px;
+    width:50%;
+    float:right;
+    display:inline-block;
+}
+#bottom-column {
+    padding: 0rem 0rem;
+    width: 100%;
+
+}
+
+.table-row {
+    height: 63px;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.wait_time_graph > div, .patient_score_graph > div {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.draglayer {
+    cursor: pointer !important;
+}
+
+
+
+
+
+
+/*relative layout css*/
+/*
+  ##Device = Most of the Smartphones Mobiles / ipad (Portrait)
+  */
+
+@media only screen and (max-width: 750px), screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        font-size: 13px;
+        margin: 0px;
+    }
+
+    .banner {
+        height: 10rem;
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    #intro {
+        margin: 10px 0px;
+    }
+
+    #left-column, #right-column {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #right-column {
+        padding: 0rem 0.5rem;
+    }
+
+    #reset-btn-outer {
+        text-align: center;
+    }
+
+    .table-row > div {
+        width: 100% !important;
+        text-align: center;
+        margin: auto;
+    }
+
+    .table-row:nth-child(even), .table-row:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #wait_time_table:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #graph-display > b{
+        line-height: 2.5;
+        font-size: 13px;
+        display: block;
+        text-align: center;
+    }
+
+    .annotation-text {
+        font-size: 0.8rem !important;
+    }
+
+}
