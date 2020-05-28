@@ -85,7 +85,7 @@ def Map():
             dcc.Graph(id='graph',style={'height': 700, 'width': 'auto', 'margin': 'auto'},figure=fig,config={'scrollZoom': False}),
         ],
     )
-# Australia Map part - display racing route on the map
+# Australia Map part ---- display racing route on the map
 def StationControl():
     """
     :return: A Div containing controls for graphs.
